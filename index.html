@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Récapitulatif de correction de facture et coordonnées de règlement — Papeterie Merlin.">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; form-action 'none'; base-uri 'none'; object-src 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Correction de facture · Papeterie Merlin</title>
+  <link rel="icon" href="icone.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au récapitulatif</a>
+  <div class="exercise-bar">
+    <div class="container exercise-bar__inner">
+      <span><span class="status-dot" aria-hidden="true"></span> Espace comptabilité</span>
+      <span>Papeterie Merlin <span aria-hidden="true">/</span> Fournisseurs</span>
+    </div>
+  </div>
+
+  <header class="masthead container">
+    <a class="brand" href="index.html" aria-label="Papeterie Merlin — accueil du document">
+      <svg class="brand__icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
+        <rect x="7" y="5" width="31" height="36" rx="5" stroke="currentColor" stroke-width="2"/>
+        <path d="M15 14h15M15 20h15M15 26h9" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        <path d="m27 34 4 4 9-10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__words"><strong>Papeterie Merlin</strong><span>Nous disruptons le papier depuis 1987.</span></span>
+    </a>
+    <div class="masthead__label"><span class="tiny-square" aria-hidden="true"></span> Dossier fournisseurs</div>
+  </header>
+
+  <main class="container" id="contenu">
+    <div class="breadcrumb" aria-label="Contexte du document">
+      Comptabilité <span aria-hidden="true">/</span> Fournisseurs <span aria-hidden="true">/</span> Correction de facture
+    </div>
+
+    <section class="page-intro" aria-labelledby="page-title">
+      <div>
+        <p class="eyebrow">Marché des 14 écoles du Val de Marge</p>
+        <h1 id="page-title">Un récapitulatif.<br>Une mise à jour.</h1>
+        <p class="intro-copy">Consultez la correction associée à la facture du premier lot et confirmez sa prise en compte.</p>
+      </div>
+      <div class="document-stamp">
+        <span class="document-stamp__number">01</span>
+        <span>Correction<br>de coordonnées</span>
+      </div>
+    </section>
+
+    <div class="document-layout">
+      <article class="document-card" aria-labelledby="document-title">
+        <header class="document-card__head">
+          <div>
+            <p class="eyebrow">Récapitulatif de traitement</p>
+            <h2 id="document-title">Correction de facture</h2>
+          </div>
+          <span class="pill" id="document-status">À confirmer</span>
+        </header>
+
+        <div class="document-card__body">
+          <dl class="document-details">
+            <div class="detail detail--wide"><dt>Fournisseur</dt><dd>Cartonnerie du Val de Marge</dd></div>
+            <div class="detail"><dt>Référence de facture</dt><dd class="mono">CVM-014-L1</dd></div>
+            <div class="detail"><dt>Projet</dt><dd>14 écoles du Val de Marge</dd></div>
+            <div class="detail"><dt>Objet</dt><dd>Premier lot — marché des cahiers</dd></div>
+            <div class="detail"><dt>Règlement prévu</dt><dd>Prochaine préparation du vendredi</dd></div>
+          </dl>
+
+          <section class="change-note" aria-labelledby="change-title">
+            <span class="change-note__icon" aria-hidden="true">↗</span>
+            <div>
+              <h3 id="change-title">Ce qui change</h3>
+              <p>Les coordonnées bancaires de règlement sont remplacées. Le fournisseur, la référence et le montant de la facture restent identiques.</p>
+            </div>
+          </section>
+
+          <section class="bank-block" aria-labelledby="bank-title">
+            <div class="bank-block__head">
+              <h3 id="bank-title">Coordonnées de règlement présentées</h3>
+              <span class="small-label">Mise à jour</span>
+            </div>
+            <dl>
+              <div><dt>Bénéficiaire affiché</dt><dd>Cartonnerie du Val de Marge</dd></div>
+              <div><dt>IBAN</dt><dd class="mono account-example">FR93 2304 4030 1900 3100 3201 987</dd></div>
+            </dl>
+          </section>
+
+          <form id="confirmation-form">
+            <fieldset>
+              <legend>Prise en compte de la correction</legend>
+              <label class="confirmation-choice" for="accept-change">
+                <input id="accept-change" name="accept-change" type="checkbox" required>
+                <span>J’accepte la prise en compte du changement de RIB pour cette facture.</span>
+              </label>
+              <button class="button button--primary" id="confirm-button" type="button">
+                Confirmer la prise en compte <span aria-hidden="true">→</span>
+              </button>
+            </fieldset>
+          </form>
+          <noscript><p class="notice">Activez JavaScript pour confirmer la prise en compte du document.</p></noscript>
+
+          <section class="debrief" id="debrief" aria-labelledby="debrief-title" hidden>
+            <h3 id="debrief-title" tabindex="-1">Ce clic n’a rien changé.</h3>
+            <p>Le vrai piège, c’était la suite : recopier ce RIB dans la fiche fournisseur. Sans contrôle, le règlement de vendredi pouvait partir vers un compte que personne n’a vérifié.</p>
+          </section>
+        </div>
+        <footer class="document-card__footer"><span class="tiny-square" aria-hidden="true"></span> Réf. CVM-014-L1 <span aria-hidden="true">·</span> Papeterie Merlin</footer>
+      </article>
+
+      <aside class="summary" aria-labelledby="summary-title">
+        <section class="summary-card">
+          <p class="eyebrow" id="summary-title">Montant de la facture</p>
+          <p class="amount">2 960<span>,00 €</span></p>
+          <p class="amount-note"><span aria-hidden="true">=</span> Montant inchangé</p>
+          <div class="summary-rule"></div>
+          <dl class="summary-details">
+            <div><dt>Marché</dt><dd>14 écoles</dd></div>
+            <div><dt>Référence</dt><dd class="mono">CVM-014-L1</dd></div>
+            <div><dt>Modification</dt><dd>Coordonnées bancaires</dd></div>
+          </dl>
+          <div class="summary-card__bottom"><span class="status-dot" aria-hidden="true"></span> Pour préparation du règlement</div>
+        </section>
+        <div class="margin-note">
+          <span class="margin-note__line" aria-hidden="true"></span>
+          <p>Le papier change.<br>La référence reste.</p>
+          <span>#PapierAgile</span>
+        </div>
+      </aside>
+    </div>
+
+    <footer class="page-footer">
+      <div><strong>Papeterie Merlin</strong><p>7 impasse du Massicot · Saint-Buvard-sur-Marge</p></div>
+      <p class="page-footer__disclaimer">Papeterie Merlin<br>Service comptable · Dossier fournisseurs</p>
+    </footer>
+  </main>
+</body>
+</html>
